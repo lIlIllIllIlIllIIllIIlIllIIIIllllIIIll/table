@@ -1,0 +1,105 @@
+-- =======================
+--     Camlock Settings
+-- =======================
+
+Camlock = {
+    ['Enabled'] = true,
+    ['Key'] = Enum.KeyCode.X,
+    ['Prediction'] = {
+        ['Enabled'] = true,
+        ['Multiplier'] = 0.14,  
+        ['XOffset'] = 0.2,      
+        ['YOffset'] = 0.25,
+        ['ZOffset'] = 0.2,
+    },
+    ['Smoothness'] = {
+        ['Enabled'] = true,
+        ['Level'] = 0.07,       
+        ['Acceleration'] = 0.01,  
+        ['Deceleration'] = 0.005,  
+    },
+    ['Shake'] = {
+        ['Enabled'] = true,
+        ['Intensity'] = 0.5,  
+    },
+    ['Aimbot'] = {
+        ['TargetPart'] = "Head",   
+        ['NearestPart'] = true,
+        ['CamlockPrediction'] = 0.2,  
+        ['CameraSmoothing'] = 0.01,  
+    },
+    ['Active'] = false,
+    ['NOTIF'] = true
+}
+
+-- =======================
+--     Dotlock Settings
+-- =======================
+
+Dotlock = {
+    ['Enabled'] = true,
+    ['Key'] = "x",
+    ['DOT'] = true,
+    ['AIRSHOT'] = true,
+    ['NOTIF'] = true,
+    ['Prediction'] = {
+        ['Enabled'] = true,
+        ['AccomodationFactorX'] = 0.127,  
+        ['AccomodationFactorY'] = 0.122,   
+        ['AccomodationFactorZ'] = 0.133,  
+    },
+    ['DotHitpart'] = "HumanoidRootPart",  
+    ['DotAirHitpart'] = "UpperTorso"
+}
+
+DotCustomization = {
+    ['DotSize'] = 1.8,
+    ['DotColor'] = Color3.fromRGB(0, 0, 0),
+    ['OutlineThickness'] = 1,
+    ['Transparency'] = 0,
+    ['Shape'] = "Circle", 
+    ['Effects'] = {
+        ['Rainbow'] = true,
+        ['Pulsate'] = false,
+    },
+}
+
+-- =======================
+--     Autoshoot Settings
+-- =======================
+
+AutoShoot = {
+    ['Enabled'] = true,
+    ['Key'] = Enum.KeyCode.C, 
+    ['Delay'] = 0.05, 
+    ['Mode'] = "Hold",  
+    ['NOTIF'] = true,  
+}
+
+-- =======================
+--     Miscellaneous
+-- =======================
+
+Miscellaneous = {
+    ['FOVChanger'] = {
+        ['Enabled'] = false,
+        ['FOV'] = 120,  
+    },
+    ['Auto360'] = {
+        ['Enabled'] = true,
+        ['SpinSpeed'] = 3400,  
+        ['Degrees'] = 360,     
+        ['Keybind'] = Enum.KeyCode.Z,
+    },
+    ['Movement'] = {
+        ['NoSlow'] = false,  -- Enable NoSlow (removes slowdown effects)
+        ['NoJumpPowerChange'] = false,  -- Enable JumpPower hook
+        ['InfiniteZoom'] = true  -- Enable Infinite Zoom
+    },
+    ['Macro'] = {
+        ['Enabled'] = true,
+        ['KeyBind'] = "Q",  -- Key to activate macro
+        ['BypassMacroAbuse'] = false,  -- Toggle to bypass macro abuse detection
+        ['Speed'] = 0.9,  -- Macro speed
+    }
+}
