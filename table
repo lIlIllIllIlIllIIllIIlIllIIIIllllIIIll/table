@@ -1,3 +1,5 @@
+script_key="MILpLHkkFcmmadsTzAAyMnYtGsrLSbnt";
+
 -- =======================
 --     Camlock Settings
 -- =======================
@@ -103,3 +105,4 @@ Miscellaneous = {
         ['Speed'] = 0.9,  -- Macro speed
     }
 }
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b04345dccdcdbd672b6c671c012ee0e8.lua"))()
