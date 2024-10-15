@@ -1,9 +1,4 @@
-script_key="";            --your key here
-
--- =======================
---     Camlock Settings
--- =======================
-
+script_key="";
 Camlock = {
     ['Enabled'] = true,
     ['Key'] = Enum.KeyCode.X,
@@ -31,56 +26,44 @@ Camlock = {
         ['CameraSmoothing'] = 0.01,  
     },
     ['Active'] = false,
-    ['NOTIF'] = true
+    ['NOTIF'] = false
 }
-
--- =======================
---     Dotlock Settings
--- =======================
 
 Dotlock = {
     ['Enabled'] = true,
-    ['Key'] = "x",
+    ['Key'] = "v",
     ['DOT'] = true,
     ['AIRSHOT'] = true,
     ['NOTIF'] = true,
     ['Prediction'] = {
         ['Enabled'] = true,
-        ['AccomodationFactorX'] = 0.127,  
-        ['AccomodationFactorY'] = 0.122,   
-        ['AccomodationFactorZ'] = 0.133,  
+        ['AccomodationFactorX'] = 0.1265,  
+        ['AccomodationFactorY'] = 0.12,   
+        ['AccomodationFactorZ'] = 0.12742,  
     },
     ['DotHitpart'] = "HumanoidRootPart",  
     ['DotAirHitpart'] = "UpperTorso"
 }
 
 DotCustomization = {
-    ['DotSize'] = 1.8,
+    ['DotSize'] = 5.5,
     ['DotColor'] = Color3.fromRGB(0, 0, 0),
     ['OutlineThickness'] = 1,
     ['Transparency'] = 0,
-    ['Shape'] = "Circle", 
+    ['Shape'] = "Shard", -- Circle, Square, Skull, Shard --[[ if shard is chosen, i reccomend making DotSize much larger ]]
     ['Effects'] = {
-        ['Rainbow'] = true,
-        ['Pulsate'] = false,
+        ['Rainbow'] = false,
+        ['Pulsate'] = true,
     },
 }
-
--- =======================
---     Autoshoot Settings
--- =======================
 
 AutoShoot = {
     ['Enabled'] = true,
     ['Key'] = Enum.KeyCode.C, 
-    ['Delay'] = 0.05, 
+    ['Delay'] = 0.02, 
     ['Mode'] = "Hold",  
     ['NOTIF'] = true,  
 }
-
--- =======================
---     Miscellaneous
--- =======================
 
 Miscellaneous = {
     ['FOVChanger'] = {
@@ -94,15 +77,15 @@ Miscellaneous = {
         ['Keybind'] = Enum.KeyCode.Z,
     },
     ['Movement'] = {
-        ['NoSlow'] = false,  -- Enable NoSlow (removes slowdown effects)
-        ['NoJumpPowerChange'] = false,  -- Enable JumpPower hook
-        ['InfiniteZoom'] = true  -- Enable Infinite Zoom
+        ['NoSlow'] = false,  
+        ['NoJumpPowerChange'] = false,  
+        ['InfiniteZoom'] = true  
     },
     ['Macro'] = {
         ['Enabled'] = true,
-        ['KeyBind'] = "Q",  -- Key to activate macro
+        ['KeyBind'] = "Q",  
         ['BypassMacroAbuse'] = false,  -- Toggle to bypass macro abuse detection
-        ['Speed'] = 0.9,  -- Macro speed
+        ['Speed'] = 0.9,  
     }
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b04345dccdcdbd672b6c671c012ee0e8.lua"))()
